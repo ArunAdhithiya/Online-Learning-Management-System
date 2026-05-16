@@ -37,15 +37,15 @@ public class StudentServiceImplTest {
     void testAddStudent_StudentPresent_SameEmailId(){
 
         StudentDto studentDto = new StudentDto();
-        studentDto.setFirstName("Karthik");
-        studentDto.setLastName("Kulkarni");
-        studentDto.setEmailId("kartikkulkarni1411@gmail.com");
+        studentDto.setFirstName("Arun");
+        studentDto.setLastName("V S");
+        studentDto.setEmailId("arun1411@gmail.com");
         studentDto.setContactNo("6361921186");
 
         Student student = new Student();
-        student.setFirstName("Karthik");
-        student.setLastName("Kulkarni");
-        student.setEmailId("kartikkulkarni1411@gmail.com");
+        student.setFirstName("Arun");
+        student.setLastName("V S");
+        student.setEmailId("arun1411@gmail.com");
         student.setContactNo("6361921187");
 
         Mockito.when(studentRepository.findStudentByEmailIdOrContactNo(Mockito.anyString(), Mockito.anyString()))
@@ -59,15 +59,15 @@ public class StudentServiceImplTest {
     void testAddStudent_StudentPresent_SameContactNo(){
 
         StudentDto studentDto = new StudentDto();
-        studentDto.setFirstName("Karthik");
-        studentDto.setLastName("Kulkarni");
-        studentDto.setEmailId("kartikkulkarni1411@gmail.com");
+        studentDto.setFirstName("Arun");
+        studentDto.setLastName("V S");
+        studentDto.setEmailId("arun1411@gmail.com");
         studentDto.setContactNo("6361921186");
 
         Student student = new Student();
-        student.setFirstName("Karthik");
-        student.setLastName("Kulkarni");
-        student.setEmailId("kartikkulkarni1311@gmail.com");
+        student.setFirstName("Arun");
+        student.setLastName("V S");
+        student.setEmailId("arun1311@gmail.com");
         student.setContactNo("6361921186");
 
         Mockito.when(studentRepository.findStudentByEmailIdOrContactNo(Mockito.anyString(), Mockito.anyString()))
@@ -81,15 +81,15 @@ public class StudentServiceImplTest {
     void testAddStudent_StudentPresent_SameEmailIdAndContactNo() {
 
         StudentDto studentDto = new StudentDto();
-        studentDto.setFirstName("Karthik");
-        studentDto.setLastName("Kulkarni");
-        studentDto.setEmailId("kartikkulkarni1411@gmail.com");
+        studentDto.setFirstName("Arun");
+        studentDto.setLastName("V S");
+        studentDto.setEmailId("arun1411@gmail.com");
         studentDto.setContactNo("6361921186");
 
         Student student = new Student();
-        student.setFirstName("Karthik");
-        student.setLastName("Kulkarni");
-        student.setEmailId("kartikkulkarni1411@gmail.com");
+        student.setFirstName("Arun");
+        student.setLastName("V S");
+        student.setEmailId("arun1411@gmail.com");
         student.setContactNo("6361921186");
 
         Mockito.when(studentRepository.findStudentByEmailIdOrContactNo(Mockito.anyString(), Mockito.anyString()))
@@ -103,9 +103,9 @@ public class StudentServiceImplTest {
     void testAddStudent_Success() {
 
         StudentDto studentDto = new StudentDto();
-        studentDto.setFirstName("Karthik");
-        studentDto.setLastName("Kulkarni");
-        studentDto.setEmailId("kartikkulkarni1411@gmail.com");
+        studentDto.setFirstName("Arun");
+        studentDto.setLastName("V S");
+        studentDto.setEmailId("arun1411@gmail.com");
         studentDto.setContactNo("6361921186");
         studentDto.setMentorId("b54c5166-d94f-484f-9748-0a361726ce3b");
 
@@ -126,9 +126,9 @@ public class StudentServiceImplTest {
     void testAddStudent_MentorNotFound() {
 
         StudentDto studentDto = new StudentDto();
-        studentDto.setFirstName("Karthik");
-        studentDto.setLastName("Kulkarni");
-        studentDto.setEmailId("kartikkulkarni1411@gmail.com");
+        studentDto.setFirstName("Arun");
+        studentDto.setLastName("V S");
+        studentDto.setEmailId("arun1411@gmail.com");
         studentDto.setContactNo("6361921186");
         studentDto.setMentorId("b54c5166-d94f-484f-9748-0a361726ce3b");
 
@@ -155,9 +155,9 @@ public class StudentServiceImplTest {
 
         Student student = new Student();
         student.setStudentId("245jkh12-24512435nmj-kjb5k1235-524k1jb51234");
-        student.setFirstName("Karthik");
-        student.setLastName("Kulkarni");
-        student.setEmailId("kartikkulkarni1411@gmail.com");
+        student.setFirstName("Arun");
+        student.setLastName("V S");
+        student.setEmailId("arun1411@gmail.com");
 
         Mockito.when(studentRepository.findById(student.getStudentId())).thenReturn(Optional.of(student));
         ResponseDto responseDto = studentService.deleteStudent(student.getStudentId());
@@ -170,9 +170,9 @@ public class StudentServiceImplTest {
 
         List<Student> students = new ArrayList<>();
         Student student = new Student();
-        student.setFirstName("Karthik");
-        student.setLastName("kulkarni");
-        student.setEmailId("kartikkulkarni1411@gmail.com");
+        student.setFirstName("Arun");
+        student.setLastName("V S");
+        student.setEmailId("arun1411@gmail.com");
         students.add(student);
 
         Mockito.when(studentRepository.findAll()).thenReturn(students);
@@ -187,9 +187,9 @@ public class StudentServiceImplTest {
 
         List<Student> students = new ArrayList<>();
         Student student = new Student();
-        student.setFirstName("Karthik");
-        student.setLastName("kulkarni");
-        student.setEmailId("kartikkulkarni1411@gmail.com");
+        student.setFirstName("Arun");
+        student.setLastName("V S");
+        student.setEmailId("arun1411@gmail.com");
         students.add(student);
         student = new Student();
         student.setFirstName("Kishan");
@@ -219,16 +219,16 @@ public class StudentServiceImplTest {
     void testGetStudentById_Success() {
 
         Student student = new Student();
-        student.setFirstName("Karthik");
-        student.setLastName("kulkarni");
-        student.setEmailId("kartikkulkarni1411@gmail.com");
+        student.setFirstName("Arun");
+        student.setLastName("V S");
+        student.setEmailId("arun1411@gmail.com");
 
         Mockito.when(studentRepository.findById(Mockito.anyString())).thenReturn(Optional.of(student));
 
         StudentDto studentDto = studentService.getStudentById(Mockito.anyString());
         assertNotNull(studentDto);
-        assertEquals("Karthik", studentDto.getFirstName());
-        assertEquals("kulkarni", studentDto.getLastName());
+        assertEquals("Arun", studentDto.getFirstName());
+        assertEquals("V S", studentDto.getLastName());
     }
 
     @Test
@@ -247,9 +247,9 @@ public class StudentServiceImplTest {
     void testUpdateStudent_Success() {
 
         Student student = new Student();
-        student.setFirstName("Karthik");
-        student.setLastName("Kulkarni");
-        student.setEmailId("kartikkulkarni1411@gmail.com");
+        student.setFirstName("Arun");
+        student.setLastName("V S");
+        student.setEmailId("arun1411@gmail.com");
         student.setContactNo("6361921186");
 
         String studentId = "adce3e37-1b3e-4d55-9fa3-d544db25dc32";
@@ -268,9 +268,9 @@ public class StudentServiceImplTest {
         String mentorId = "12f00760-d63c-48e0-9739-589ecabb6e05";
         List<Student> students = new ArrayList<>();
         Student student = new Student();
-        student.setFirstName("Karthik");
-        student.setLastName("kulkarni");
-        student.setEmailId("kartikkulkarni1411@gmail.com");
+        student.setFirstName("Arun");
+        student.setLastName("V S");
+        student.setEmailId("arun1411@gmail.com");
         students.add(student);
         student = new Student();
         student.setFirstName("Kishan");
@@ -299,9 +299,9 @@ public class StudentServiceImplTest {
         String mentorId = "12f00760-d63c-48e0-9739-589ecabb6e05";
         List<Student> students = new ArrayList<>();
         Student student = new Student();
-        student.setFirstName("Karthik");
-        student.setLastName("kulkarni");
-        student.setEmailId("kartikkulkarni1411@gmail.com");
+        student.setFirstName("Arun");
+        student.setLastName("V S");
+        student.setEmailId("arun1411@gmail.com");
         students.add(student);
         student = new Student();
         student.setFirstName("Kishan");
@@ -322,9 +322,9 @@ public class StudentServiceImplTest {
         List<Student> students = new ArrayList<>();
         Student student = new Student();
         student.setStudentId("b54c5166-d94f-484f-9748-0a361726ce3b");
-        student.setFirstName("Karthik");
-        student.setLastName("kulkarni");
-        student.setEmailId("kartikkulkarni1411@gmail.com");
+        student.setFirstName("Arun");
+        student.setLastName("V S");
+        student.setEmailId("arun1411@gmail.com");
         student.setMentorId("1b5654b7-2fab-4990-a253-1cb071872793");
         students.add(student);
         List<String> studentsIds = List.of("b54c5166-d94f-484f-9748-0a361726ce3b");
@@ -342,9 +342,9 @@ public class StudentServiceImplTest {
         List<Student> students = new ArrayList<>();
         Student student = new Student();
         student.setStudentId("b54c5166-d94f-484f-9748-0a361726ce3b");
-        student.setFirstName("Karthik");
-        student.setLastName("kulkarni");
-        student.setEmailId("kartikkulkarni1411@gmail.com");
+        student.setFirstName("Arun");
+        student.setLastName("V S");
+        student.setEmailId("arun1411@gmail.com");
         student.setMentorId("1b5654b7-2fab-4990-a253-1cb071872793");
         students.add(student);
         List<String> studentsIds = List.of("b54c5166-d94f-484f-9748-0a361726ce3b", "1b5654b7-2fab-4990-a253-1cb071872793");
@@ -371,9 +371,9 @@ public class StudentServiceImplTest {
         List<Student> students = new ArrayList<>();
         Student student = new Student();
         student.setStudentId("baf7a5cc-7d01-431c-8c4e-086ea64ef822");
-        student.setFirstName("Karthik");
-        student.setLastName("kulkarni");
-        student.setEmailId("kartikkulkarni1411@gmail.com");
+        student.setFirstName("Arun");
+        student.setLastName("V S");
+        student.setEmailId("arun1411@gmail.com");
         students.add(student);
         student = new Student();
         student.setStudentId("e34395fd-8e66-4ab7-be23-717230903ad9");
