@@ -31,9 +31,9 @@ public class StudentControllerTest {
     void testAddStudent() {
 
         StudentDto studentDto = new StudentDto();
-        studentDto.setFirstName("Karthik");
-        studentDto.setLastName("Kulkarni");
-        studentDto.setEmailId("kartikkulkarni1411@gmail.com");
+        studentDto.setFirstName("Arun");
+        studentDto.setLastName("V S");
+        studentDto.setEmailId("arun1411@gmail.com");
         studentDto.setContactNo("6361921186");
 
         ResponseDto responseDto = new ResponseDto("200", "Student added successfully");
@@ -63,9 +63,9 @@ public class StudentControllerTest {
 
         List<StudentDto> students = new ArrayList<>();
         StudentDto student = new StudentDto();
-        student.setFirstName("Karthik");
-        student.setLastName("kulkarni");
-        student.setEmailId("kartikkulkarni1411@gmail.com");
+        student.setFirstName("Arun");
+        student.setLastName("V S");
+        student.setEmailId("arun1411@gmail.com");
         students.add(student);
         student = new StudentDto();
         student.setFirstName("Kishan");
@@ -85,9 +85,9 @@ public class StudentControllerTest {
     void testGetStudentById() {
 
         StudentDto student = new StudentDto();
-        student.setFirstName("Karthik");
-        student.setLastName("kulkarni");
-        student.setEmailId("kartikkulkarni1411@gmail.com");
+        student.setFirstName("Arun");
+        student.setLastName("V S");
+        student.setEmailId("arun1411@gmail.com");
 
         Mockito.when(studentService.getStudentById(Mockito.anyString())).thenReturn(student);
 
@@ -101,9 +101,9 @@ public class StudentControllerTest {
 
         String studentId = "adce3e37-1b3e-4d55-9fa3-d544db25dc32";
         StudentDto student = new StudentDto();
-        student.setFirstName("Karthik");
-        student.setLastName("Kulkarni");
-        student.setEmailId("kartikkulkarni1411@gmail.com");
+        student.setFirstName("Arun");
+        student.setLastName("V S");
+        student.setEmailId("arun1411@gmail.com");
         student.setContactNo("6361921186");
 
         ResponseDto responseDto = new ResponseDto("200", "Student updated Successfully");
@@ -120,9 +120,9 @@ public class StudentControllerTest {
         String mentorId = "12f00760-d63c-48e0-9739-589ecabb6e05";
         List<StudentDto> students = new ArrayList<>();
         StudentDto student = new StudentDto();
-        student.setFirstName("Karthik");
-        student.setLastName("kulkarni");
-        student.setEmailId("kartikkulkarni1411@gmail.com");
+        student.setFirstName("Arun");
+        student.setLastName("V S");
+        student.setEmailId("arun1411@gmail.com");
         students.add(student);
         Mentor mentorDto = Mentor.builder()
                 .mentorName("Kishan")
@@ -158,9 +158,9 @@ public class StudentControllerTest {
 
         List<StudentDto> students = new ArrayList<>();
         StudentDto student = new StudentDto();
-        student.setFirstName("Karthik");
-        student.setLastName("kulkarni");
-        student.setEmailId("kartikkulkarni1411@gmail.com");
+        student.setFirstName("Arun");
+        student.setLastName("V S");
+        student.setEmailId("arun1411@gmail.com");
         students.add(student);
         student = new StudentDto();
         student.setFirstName("Kishan");
