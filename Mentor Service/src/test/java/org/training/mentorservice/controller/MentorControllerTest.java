@@ -32,8 +32,8 @@ public class MentorControllerTest {
     void testAddMentor() {
 
         MentorDto mentorDto = MentorDto.builder()
-                .mentorName("Karthik")
-                .emailId("kartikkulkarni1411@gmail.com")
+                .mentorName("Arun")
+                .emailId("arun1411@gmail.com")
                 .contactNo("6361921186")
                 .build();
 
@@ -51,8 +51,8 @@ public class MentorControllerTest {
 
         String mentorId = "eae4d3f8-6a27-4f58-a807-4d18f9dc6dfe";
         MentorDto mentor = MentorDto.builder()
-                .mentorName("Karthik")
-                .emailId("kartikkulkarni1411@gmail.com")
+                .mentorName("Arun")
+                .emailId("arun1411@gmail.com")
                 .contactNo("6361921186")
                 .build();
 
@@ -69,9 +69,9 @@ public class MentorControllerTest {
 
         List<MentorDto> mentors = new ArrayList<>();
         MentorDto mentor = new MentorDto();
-        mentor.setMentorName("Karthik Kulkarni");
+        mentor.setMentorName("Arun");
         mentor.setContactNo("6361921186");
-        mentor.setEmailId("kartikkulkarni1411@gmail.com");
+        mentor.setEmailId("arun1411@gmail.com");
         mentors.add(mentor);
 
         Mockito.when(mentorService.getAllMentors()).thenReturn(mentors);
@@ -116,9 +116,9 @@ public class MentorControllerTest {
 
         List<Mentor> mentors = new ArrayList<>();
         Mentor mentor = new Mentor();
-        mentor.setMentorName("Karthik Kulkarni");
+        mentor.setMentorName("Arun");
         mentor.setContactNo("6361921186");
-        mentor.setEmailId("kartikkulkarni1411@gmail.com");
+        mentor.setEmailId("arun1411@gmail.com");
         mentors.add(mentor);
         mentor = new Mentor();
         mentor.setMentorName("Kishan Kulkarni");
