@@ -37,8 +37,8 @@ public class MentorServiceImplTest {
     void testAddMentor_MentorPresent_SameEmailIdAndContactNo() {
 
         MentorDto mentorDto = MentorDto.builder()
-                .mentorName("Karthik")
-                .emailId("kartikkulkarni1411@gmail.com")
+                .mentorName("Arun")
+                .emailId("arun1411@gmail.com")
                 .contactNo("6361921186")
                 .build();
 
@@ -56,8 +56,8 @@ public class MentorServiceImplTest {
     void testAddMentor_MentorPresent_SameContactNo() {
 
         MentorDto mentorDto = MentorDto.builder()
-                .mentorName("Karthik")
-                .emailId("kartikkulkarni1411@gmail.com")
+                .mentorName("Arun")
+                .emailId("arun1411@gmail.com")
                 .contactNo("6361921186")
                 .build();
 
@@ -76,8 +76,8 @@ public class MentorServiceImplTest {
     void testAddMentor_MentorPresnt_SameEmailId() {
 
         MentorDto mentorDto = MentorDto.builder()
-                .mentorName("Karthik")
-                .emailId("kartikkulkarni1411@gmail.com")
+                .mentorName("Arun")
+                .emailId("arun1411@gmail.com")
                 .contactNo("6361921186")
                 .build();
 
@@ -96,8 +96,8 @@ public class MentorServiceImplTest {
     void testAddMentor_Success() {
 
         MentorDto mentorDto = MentorDto.builder()
-                .mentorName("Karthik")
-                .emailId("kartikkulkarni1411@gmail.com")
+                .mentorName("Arun")
+                .emailId("arun1411@gmail.com")
                 .contactNo("6361921186")
                 .build();
 
@@ -125,8 +125,8 @@ public class MentorServiceImplTest {
         String mentorId = "eae4d3f8-6a27-4f58-a807-4d18f9dc6dfe";
         Mentor mentor = Mentor.builder()
                 .mentorId("eae4d3f8-6a27-4f58-a807-4d18f9dc6dfe")
-                .mentorName("Karthik")
-                .emailId("kartikkulkarni1411@gmail.com")
+                .mentorName("Arun")
+                .emailId("arun1411@gmail.com")
                 .contactNo("6361921186")
                 .build();
 
@@ -142,9 +142,9 @@ public class MentorServiceImplTest {
 
         List<Mentor> mentors = new ArrayList<>();
         Mentor mentor = new Mentor();
-        mentor.setMentorName("Karthik Kulkarni");
+        mentor.setMentorName("Arun");
         mentor.setContactNo("6361921186");
-        mentor.setEmailId("kartikkulkarni1411@gmail.com");
+        mentor.setEmailId("arun1411@gmail.com");
         mentors.add(mentor);
         mentor = new Mentor();
         mentor.setMentorName("Kishan Kulkarni");
@@ -223,8 +223,8 @@ public class MentorServiceImplTest {
         String mentorId = "12f00760-d63c-48e0-9739-589ecabb6e05";
         Mentor mentor = Mentor.builder()
                 .mentorId("12f00760-d63c-48e0-9739-589ecabb6e05")
-                .mentorName("Karthik")
-                .emailId("kartikkulkarni1411@gmail.com")
+                .mentorName("Arun")
+                .emailId("arun1411@gmail.com")
                 .contactNo("6361921186")
                 .build();
 
@@ -242,9 +242,9 @@ public class MentorServiceImplTest {
         List<Mentor> mentors = new ArrayList<>();
         Mentor mentor = new Mentor();
         mentor.setMentorId("eae4d3f8-6a27-4f58-a807-4d18f9dc6dfe");
-        mentor.setMentorName("Karthik Kulkarni");
+        mentor.setMentorName("Arun");
         mentor.setContactNo("6361921186");
-        mentor.setEmailId("kartikkulkarni1411@gmail.com");
+        mentor.setEmailId("arun1411@gmail.com");
         mentors.add(mentor);
         mentor = new Mentor();
         mentor.setMentorId("12f00760-d63c-48e0-9739-589ecabb6e05");
