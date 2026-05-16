@@ -71,7 +71,3 @@ Users will be able to search for courses using keywords, filters, and categories
 The application will use JSON Web Tokens (JWTs) for authentication and authorization. This will help ensure that only authorized users are able to access the API endpoints and perform actions such as creating courses or enrolling in courses.
 
 
-
-## About
-
-This repository is contributed by [@kartik1502](https://github.com/kartik1502), which mainly focuses on the Spring boot application using JWT Authentication.
